@@ -26,7 +26,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("https://larks-tech-hub-server.onrender.com", {
+    let response = await fetch("https://larks-tech-hub-server.onrender.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
